@@ -1,0 +1,106 @@
+@media all and (-ms-high-contrast: none) {
+    header .header_top .cv_btn {
+        line-height: 69px;
+        float: right;
+        font-weight: bold;
+    }
+    header .fixed_nav .logo {
+        margin-top: 12px;
+        padding-bottom: 21px;
+    }
+    header .fixed_nav .cv_btn {
+        line-height: 57px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+    }
+    header .header_center .top_text > span {
+        line-height: 27px;
+        display: inline-block;
+    }
+    header .top_cv h2 {
+        font-weight: bold;
+    }
+    .cv_btn {
+        line-height: 104px;
+    }
+    #second_section .text_area .read_text {
+        line-height: 65px;
+    }
+    #about h3 {
+        line-height: 110px;
+    }
+    #about h2 {
+        padding-top: 5px;
+        margin-top: -5px;
+    }
+    #about h4 {
+        line-height: 99px;
+    }
+    #copy_area h4 span {
+        line-height: 99px;
+    }
+    #about .reason_area li span {
+        line-height: 20px;
+        vertical-align: -11%;
+    }
+    #merit .px_hj span {
+        vertical-align: -1% !important;
+    }
+    #merit dl dd span {
+        vertical-align: 2%;
+    }
+    #other_plan h2 span {
+        line-height: 93px;
+    }
+    #member .member_box h3 {
+        line-height: 55px;
+    }
+    #member .member_detail h4 .px16 {
+        line-height: 2.2;
+    }
+    #hyoka h2 span {
+        vertical-align: -8%;
+    }
+    #kakaku .pick_up_area .ttl {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-top: 17px;
+        margin-bottom: 1px;
+    }
+    #kakaku .price_area dl dt .ttl_sub {
+        line-height: 37px;
+        margin-bottom: 3px;
+    }
+    #kakaku .price_area dl dt .ttl_sub {
+        line-height: 40px;
+    }
+    #kakaku .price_area .push dt:after {
+        height: 16px;
+        bottom: -335px;
+    }
+    #kakaku .price_area dl dd li {
+        line-height: 40px;
+    }
+    #kakaku .price_area .push dd li {
+        line-height: 51px;
+    }
+    #kakaku .price_area dl dd .price .mini {
+        vertical-align: text-bottom;
+    }
+    #question dl dt {
+        padding-top: 20px;
+    }
+    .wrap_bg:after {
+        z-index: -1;
+    }
+}
+
+@supports (-ms-ime-align: auto) {
+    /* Edge のみ適用される */
+    .wrap_bg:after {
+        z-index: -1;
+    }
+}

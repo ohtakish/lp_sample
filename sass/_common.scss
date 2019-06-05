@@ -1,0 +1,475 @@
+@charset "utf-8";
+// 基本形
+html {
+    font-size: 62.5%;
+    @media#{$pc} {
+        //        min-width: 1300px;
+    }
+}
+
+html {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    @media #{$pc} {
+        min-width: 1300px;
+    }
+}
+
+@media #{$pc} {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+//.loading_wrap,
+//.loading_text,
+//.loading_clay,
+//.loadingBar,
+//.loadingBar p {
+//    display: none;
+//}
+.loading_text,
+.loadingBar > p,
+.loading_clay,
+.loading_clay {
+    transition: .4s;
+}
+
+.loading_wrap {
+    width: 100%;
+    height: 100%;
+    background-color: $ib_c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    transition: 1.5s;
+    .loading_text {
+        color: #fff;
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        line-height: 1;
+        height: 1em;
+        text-align: center;
+        font-size: 5.6rem;
+        font-weight: 300;
+        padding: 0 0 90px 0;
+        box-sizing: content-box;
+        letter-spacing: 1px;
+    }
+    .loading_clay {
+        width: 413px; //        width: 530px;
+        opacity: 0;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-sizing: content-box;
+        display: block;
+        margin: auto;
+    }
+    @media #{$sp} {
+        .loading_text {
+            letter-spacing: 2px;
+            padding-bottom: 45px;
+            font-size: 2.8rem;
+        }
+        .loading_clay {
+            width: 80%;
+            max-width: 280px;
+        }
+    }
+}
+
+.loadingBar {
+    position: fixed;
+    width: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    z-index: 10001;
+    transition: .5s;
+    > p {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        height: 1em;
+        line-height: 1;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 4.2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        padding: 80px 0 0 0;
+        box-sizing: content-box;
+        margin: auto;
+    }
+    @media #{$sp} {
+        height: 1px;
+        > p {
+            font-size: 2.6rem;
+            padding-top: 50px;
+        }
+    }
+
+}
+
+//$tm_c: #494949;
+//$ts_c: #868683;
+//$ib_c: #9dd5ea;
+//$ir_c: #da6b64;
+//$iy_c: #eab84d;
+//$iyl_c: #fbf2dd;
+//$cb_c: #4eb3da;
+//$cdb_c: #269ac7;
+.ib_c {
+    color: #9dd5ea;
+}
+
+.red {
+    color: #da6b64;
+}
+
+.cb_c {
+    color: #4eb3da;
+}
+
+.cdb_c {
+    color: #269ac7;
+}
+
+.sns_icon {
+    margin: 0 auto;
+    width: 108px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    > a {
+        height: 41px;
+        width: 41px;
+        border-radius: 50%;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .tw {
+        background-color: #1B92DD;
+        background-image: url(../img/tw.png);
+        &:hover {}
+    }
+    .fb {
+        background-color: #4267AF;
+        background-image: url(../img/fb.png);
+        &:hover {}
+    }
+
+}
+
+.cv_btn {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: $ir_c;
+    max-width: 808px;
+    height: 95px;
+    line-height: 95px;
+    border-radius: 45.5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-decoration: none !important;
+    > span {
+        line-height: 1.1;
+        display: inline-block;
+        margin: 0 7px 0 7px;
+    }
+    @media#{$sp} {
+        font-size: 1.2rem;
+        height: 30px;
+        line-height: 30px;
+        width: 238px;
+    }
+}
+
+@media#{$pc} {
+    .px14 {
+        font-size: 1.4rem;
+    }
+
+    .px16 {
+        font-size: 1.6rem;
+    }
+
+    .px18 {
+        font-size: 1.8rem;
+    }
+
+    .px20 {
+        font-size: 2rem;
+    }
+
+    .px24 {
+        font-size: 2.4rem;
+    }
+
+    .px26 {
+        font-size: 2.6rem;
+    }
+
+    .px36 {
+        font-size: 3.6rem;
+    }
+
+    .px_hj {
+        font-size: 4.0rem;
+    }
+
+    .px_he {
+        font-size: 4.8rem;
+    }
+}
+
+@media#{$sp} {
+    .spx11 {
+        font-size: 1.1rem;
+    }
+    .spx14 {
+        font-size: 1.4rem;
+    }
+    .spx16 {
+        font-size: 1.6rem;
+    }
+    .spx18 {
+        font-size: 1.8rem;
+    }
+    .spx20 {
+        font-size: 2.0em;
+    }
+    .spx24 {
+        font-size: 2.4rem;
+    }
+    .spx_hj {
+        font-size: 2.4rem;
+    }
+    .spx_he {
+        font-size: 3.2rem;
+    }
+}
+
+.shadow {
+    box-shadow: 0px 0px 4px 1px rgba(7, 29, 37, 0.2);
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+//@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+//.quicksand {
+//    font-family: 'Quicksand', sans-serif;
+//}
+#wrap {
+    overflow: hidden;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Quicksand', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $tm_c; //    @media all and (-ms-high-contrast: none) {
+    //        font-family: "メイリオ", Meiryo;
+    //    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+///* table */
+//
+//table {
+//    width: 100%;
+//    border-top: 1px solid #999;
+//    border-left: 1px solid #999;
+//    border-collapse: collapse;
+//    word-wrap: break-word;
+//    margin: 15px 0;
+//}
+//
+//table th {
+//    background: #efefef;
+//}
+//
+//table td,
+//table th {
+//    border: none;
+//    padding: 15px;
+//    border-right: 1px solid #999;
+//    border-bottom: 1px solid #999;
+//}
+// あると便利なクラス
+@media #{$sp} {
+    .pc {
+        display: none;
+    }
+}
+
+@media #{$pc} {
+    .sp {
+        display: none;
+    }
+}
+
+.oh {
+    overflow: hidden;
+}
+
+.clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    @media #{$sp} {
+        max-width: 100%;
+    }
+}
+
+// a hover関係
+a:link {
+    //    color: $mc;
+    //    text-decoration: underline;
+}
+
+a:hover,
+.link-op:hover {
+    opacity: .6;
+    transition: .3s; //    text-decoration: underline !important;
+}
+
+.link-op:hover {
+    color: inherit;
+}
+
+a.no-deco {
+    text-decoration: none; //    color: $tc;
+}
+
+a:hover img {
+    opacity: 0.8;
+}
+
+// js関係
+/* 画面外にいる状態 */
+
+.fadein {
+    opacity: 0;
+    transform: translate(0, 50px);
+    transition: 1s;
+    &.delay_1 {
+        transform: translate(0, 65px);
+    }
+    &.delay_2 {
+        transform: translate(0, 80px);
+
+    }
+    &.delay_3 {
+        transform: translate(0, 95px);
+    }
+    &.delay_4 {
+        transform: translate(0, 120px);
+    }
+    &.delay_5 {
+        transform: translate(0, 135px);
+    }
+    &.delay_6 {
+        transform: translate(0, 150px);
+    }
+    &.delay_7 {
+        transform: translate(0, 165px);
+    }
+}
+
+.fade_left,
+.fade_right {
+    transition: 1.5s;
+}
+
+.delay_1 {
+    transition: 1.3s;
+}
+
+.delay_2 {
+    transition: 1.6s;
+}
+
+.delay_3 {
+    transition: 1.9s;
+}
+
+.delay_4 {
+    transition: 2.2s;
+}
+
+.delay_5 {
+    transition: 2.5s;
+}
+
+.delay_6 {
+    transition: 2.8s;
+}
+
+.delay_7 {
+    transition: 3.1s;
+}
+
+.fade_left {
+    transform: translate(-100%, 0);
+}
+
+.fade_right {
+    transform: translate(100%, 0);
+}
+
+/* 画面内に入った状態 */
+
+.fadein.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
+}
